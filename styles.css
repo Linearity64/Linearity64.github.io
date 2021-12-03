@@ -26,6 +26,18 @@ a:hover{
 	height: 100%;
 }
 
+.terminal{
+	
+	border-left: 4px solid #DDDDDD;
+	border-top: 4px solid #DDDDDD;
+	
+	position: absolute;
+	left: 18%;
+	top: 15%;
+	width: 32%;
+	height: 20%;
+}
+
 .content{
 	
 	border-right: 4px solid #DDDDDD;
@@ -79,13 +91,14 @@ a:hover{
 	
 }
 
+.content p{
+	font-size: 14px
+}
+
 h1{
 	font-size: 48px;
 }
 
-h2{
-	
-}
 
 .vl{
 	
@@ -282,4 +295,65 @@ h2{
 @-ms-keyframes expand{
 	from {height: 0%;}
 	to {height: 75%;}
+}
+
+@media only screen and (max-width: 1500px) {
+	
+	h1{
+		font-size: 36px;
+	}
+	
+	.content{
+		font-size: 12px;
+	}
+	
+	.content p{
+		font-size: 12px;
+	}
+	
+	.header{
+		font-size: 14px;
+	}
+  
+}
+
+@media only screen and (max-width: 1280px){
+	
+	h1{
+		font-size: 32px;
+	}
+	
+	.content{
+		font-size: 10px;
+	}
+	
+	.content p{
+		font-size: 10px;
+	}
+	
+	.header{
+		font-size: 12px;
+	}
+	
+}
+
+@media only screen and (max-width: 1024px){
+	
+	h1{
+		font-size: 32px;
+	}
+	
+	.content{
+		font-size: 10px;
+	}
+	
+	.content p{
+		font-size: 10px;
+	}
+	
+	.header{
+		font-size: 12px;
+	}
+	
+	
 }
