@@ -4,6 +4,7 @@
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css"></link>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 		<title> Erris Fernandy </title>
 	
 	</head>
@@ -14,32 +15,131 @@
 		
 			<div class="vl"></div>
 			<div class="header">
-				<h1 style="font-weight: 250;"> <span style="color:#FF0000">Erris </span> Fernandy </h1>
-				<p> >_ Hi, I'm <span style="color:#6666FF"> an Electrical Engineer! </span> </p>
+				<h1 style="font-weight: 250;"> <span style="color:#ff6060">Erris </span> Fernandy </h1>
+				<p> >_ Hi, I'm <span style="color:#8b8bff"> an Electrical Engineer! </span> </p>
 				<hr></hr>
 				<div class="contacts">
 					<p> <span style="color:729fcf">./Email</span>>_ <a href="mailto:errisfernandy@gmail.com?subject=Hello%20There" style="color:4AF626"> errisfernandy@gmail.com </a> </p>
-					<p> <span style="color:729fcf">./Github</span>>_ <a href="https://github.com/Linearity64" style="color:4AF626"> Linearity64 </a> </p>
-					<p> <span style="color:729fcf">./Medium</span>>_ <a href="https://medium.com/@errisfernandy" style="color:4AF626"> @errisfernandy </a> </p>
-					<p> <span style="color:729fcf">./LinkedIn</span>>_ <a href="https://www.linkedin.com/in/erris-fernandy-0a5771200?originalSubdomain=id" style="color:4AF626"> Erris Fernandy </a> </p>
+					<p> <span style="color:729fcf">./Github</span>>_ <a href="https://github.com/Linearity64" target="_blank" style="color:4AF626"> Linearity64 </a> </p>
+					<p> <span style="color:729fcf">./Medium</span>>_ <a href="https://medium.com/@errisfernandy" target="_blank" style="color:4AF626"> @errisfernandy </a> </p>
+					<p> <span style="color:729fcf">./LinkedIn</span>>_ <a href="https://www.linkedin.com/in/erris-fernandy-0a5771200?originalSubdomain=id" target="_blank" style="color:4AF626"> Erris Fernandy </a> </p>
 				</div>
 			</div>
 			<div class="content">
 				<h3 style="font-weight: 250;"> >_ ls </h3>
-				<p> <span style="color:729fcf">./Experience/Infineon</span>/<a href="#" style="color:#DDDDDD">Apprentice_ProductTestEngineer</a> </p>
-				<p> <span style="color:729fcf">./Degree/UIB</span>/<a href="#" style="color:#DDDDDD">Bachelor_of_Engineering</a> </p>
-				<p> <span style="color:729fcf">./Cert/Cisco</span>/<a href="#" style="color:#DDDDDD">CIoTA</a> </p>
-				<p> <span style="color:729fcf">./Cert/Cisco</span>/<a href="#" style="color:#DDDDDD">CAIA</a> </p>
-				<p> <span style="color:729fcf">./Cert/TOEIC</span>/<a href="#" style="color:#DDDDDD">TOEIC</a> </p>
-				<p> <span style="color:729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">Automatic Cafe Management System_ACMS</a> </p>
-				<p> <span style="color:729fcf">./Projects</span>/<a href="https://raw.githack.com/Linearity64/jsr/main/index.html" style="color:4AF626">Javascript_Roguelike</a> </p>
-				<p> <span style="color:729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">TBD</a> </p>
-				<p> <span style="color:729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">TBD</a> </p>
+				
+				<p> <span style="color:#729fcf">./Experience/Infineon</span>/<a id="exp" href="#" style="color:#4AF626">Product_Test_Engineer</a></p>
+				<div class="dropdown hidden" id="exp-dd">
+					<div class="dropdown-content">
+						--- position ==> <span style="color:#6ec4da">engineer_product-test-engineer </span> <br>
+					    --- year-begin-end ==> <span style="color:#6ec4da">2022-now </span> <br>
+						--- responsibility (1/4) ==> dummy1 <br>
+						--- responsibility (2/4) ==> dummy2 <br>
+						--- responsibility (3/4) ==> dummy3 <br>
+						--- responsibility (4/4) ==> dummy4 <br>
+					</div>
+				</div>
+
+				<p> <span style="color:#729fcf">./Degree/UIB</span>/<a id="degree" href="#" style="color:#4AF626">Bachelor_of_Engineering</a> </p>
+				<div class="dropdown hidden" id="degree-dd">
+					<div class="dropdown-content">
+						--- major ==> <span style="color:#6ec4da">bachelor_electrical-engineering </span> <br>
+					    --- year-begin-end ==> <span style="color:#6ec4da">2017-2021</span> <br>
+						--- final-gpa ==> <span style="color:#6ec4da">3.88</span> <br>
+						--- final-project ==> <span style="color:#4af626">ACMS</span> <br>
+						--- notable-achievement ===> N/A, lul
+					</div>
+				</div>
+
+				<p> <span style="color:#729fcf">./Cert/Cisco</span>/<a id="ciota" href="#" style="color:#4AF626">CIoTA</a> </p>
+				<div class="dropdown hidden" id="ciota-dd">
+					<div class="dropdown-content">
+						--- position ==> <span style="color:#6ec4da">engineer_product-test-engineer </span> <br>
+					    --- year-begin-end ==> <span style="color:#6ec4da">2022-now </span> <br>
+						--- responsibility (1/4) ==> dummy1 <br>
+						--- responsibility (2/4) ==> dummy2 <br>
+						--- responsibility (3/4) ==> dummy3 <br>
+						--- responsibility (4/4) ==> dummy4 <br>
+					</div>
+				</div>
+
+				<p> <span style="color:#729fcf">./Cert/Cisco</span>/<a id="caia" href="#" style="color:#4AF626">CAIA</a> </p>
+				<div class="dropdown hidden" id="caia-dd">
+					<div class="dropdown-content">
+						--- position ==> <span style="color:#6ec4da">engineer_product-test-engineer </span> <br>
+					    --- year-begin-end ==> 2022-now <br>
+						--- responsibility (1/4) ==> dummy1 <br>
+						--- responsibility (2/4) ==> dummy2 <br>
+						--- responsibility (3/4) ==> dummy3 <br>
+						--- responsibility (4/4) ==> dummy4 <br>
+					</div>
+				</div>
+
+				<p> <span style="color:#729fcf">./Cert/TOEIC</span>/<a href="#" style="color:#4AF626">TOEIC</a> </p>
+				<p> <span style="color:#729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">Automatic Cafe Management System_ACMS</a> </p>
+				<p> <span style="color:#729fcf">./Projects</span>/<a href="https://raw.githack.com/Linearity64/jsr/main/index.html" style="color:4AF626">Javascript_Roguelike</a> </p>
+				<p> <span style="color:#729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">TBD</a> </p>
+				<p> <span style="color:#729fcf">./Projects</span>/<a href="#" style="color:#DDDDDD">TBD</a> </p>
 			</div>
 		
 		</div>
 	
+		<script>
+	
+			$("#exp").click(function(){
+				$("#exp-dd").toggleClass("show");
+				$("#exp-dd").toggleClass("hidden");
+
+				$("#degree-dd").removeClass("show");
+				$("#degree-dd").addClass("hidden");
+				$("#ciota-dd").removeClass("show");
+				$("#ciota-dd").addClass("hidden");
+				$("#caia-dd").removeClass("show");
+				$("#caia-dd").addClass("hidden");
+			});
+
+			$("#degree").click(function(){
+				$("#degree-dd").toggleClass("show");
+				$("#degree-dd").toggleClass("hidden");
+
+				$("#exp-dd").removeClass("show");
+				$("#exp-dd").addClass("hidden");
+				$("#ciota-dd").removeClass("show");
+				$("#ciota-dd").addClass("hidden");
+				$("#caia-dd").removeClass("show");
+				$("#caia-dd").addClass("hidden");
+			});
+
+			$("#ciota").click(function(){
+				$("#ciota-dd").toggleClass("show");
+				$("#ciota-dd").toggleClass("hidden");
+
+				$("#degree-dd").removeClass("show");
+				$("#degree-dd").addClass("hidden");
+				$("#exp-dd").removeClass("show");
+				$("#exp-dd").addClass("hidden");
+				$("#caia-dd").removeClass("show");
+				$("#caia-dd").addClass("hidden");
+			});
+
+			$("#caia").click(function(){
+				$("#caia-dd").toggleClass("show");
+				$("#caia-dd").toggleClass("hidden");
+
+				$("#degree-dd").removeClass("show");
+				$("#degree-dd").addClass("hidden");
+				$("#ciota-dd").removeClass("show");
+				$("#ciota-dd").addClass("hidden");
+				$("#exp-dd").removeClass("show");
+				$("#exp-dd").addClass("hidden");
+			});
+	
+		</script>
+	
+	
 	</body>
+	
+	
 
 
 </html>

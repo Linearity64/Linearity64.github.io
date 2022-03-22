@@ -26,18 +26,6 @@ a:hover{
 	height: 100%;
 }
 
-.terminal{
-	
-	border-left: 4px solid #DDDDDD;
-	border-top: 4px solid #DDDDDD;
-	
-	position: absolute;
-	left: 18%;
-	top: 15%;
-	width: 32%;
-	height: 20%;
-}
-
 .content{
 	
 	border-right: 4px solid #DDDDDD;
@@ -189,6 +177,48 @@ h1{
 			animation-fill-mode: forwards;
 }
 
+.dropdown{
+	
+	position: relative;
+	height: 0px;
+	margin:  -0.5em 0px;
+	padding: 0px 0px;
+	overflow: hidden;
+	background-color: #303030;
+	
+}
+
+.dropdown-content{
+
+	line-height: 1.8em;
+	padding: 5px;
+	margin: 0;
+	font-size: 14px;
+	color: #CCCCCC;
+
+}
+
+.show{
+
+	animation-name: drop;
+	animation-duration: 0.6s;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+.hidden{
+	
+	animation-name: lift;
+	animation-duration: 0.6s;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+
+}
+
 @keyframes unhide{
 	from {left: 50%}
 	to {left: 18%}
@@ -208,7 +238,6 @@ h1{
 	from {left: 50%}
 	to {left: 18%}
 }
-
 
 @keyframes fadein{
 	from {opacity: 0;}
@@ -295,6 +324,46 @@ h1{
 @-ms-keyframes expand{
 	from {height: 0%;}
 	to {height: 75%;}
+}
+
+@keyframes drop{
+	from {height: 0px;}
+	to {height: 200px;}
+}
+
+@-moz-keyframes drop{
+	from {height: 0px;}
+	to {height: 200px;}
+}
+
+@-webkit-keyframes drop{
+	from {height: 0px;}
+	to {height: 200px;}
+}
+
+@-ms-keyframes drop{
+	from {height: 0px;}
+	to {height: 200px;}
+}
+
+@keyframes lift{
+	from {height: 200px;}
+	to {height: 0px;}
+}
+
+@-moz-keyframes lift{
+	from {height: 200px;}
+	to {height: 0px;}
+}
+
+@-webkit-keyframes lift{
+	from {height: 200px;}
+	to {height: 0px;}
+}
+
+@-ms-keyframes lift{
+	from {height: 200px;}
+	to {height: 0px;}
 }
 
 @media only screen and (max-width: 1500px) {
